@@ -1,0 +1,604 @@
+:root {
+    --white: #fff;
+    --text-black: #000;
+    --bg: #f0f0f0;
+    --bg-primary: #e7e7e7;
+    --bg-btn-close: #f44336;
+    --gray-light: #f4f4f4;
+    --dark-gray: #656565;
+    --blue-50: #1700d0;
+    --blue-100: #100092;
+
+
+    --gradiente: linear-gradient(to right, #00bcd4, #0833c1);
+}
+
+/* ==================== RESET BÁSICO ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+}
+
+/* ==================== HEADER (CABEÇALHO) ==================== */
+header {
+    background: var(--gradiente);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* ==================== HEADER LEFT: Icon + Text ==================== */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* DIMINUÍDO de 15px para 10px - mais perto do texto */
+}
+
+/* ==================== ÍCONE NO HEADER ==================== */
+.header-icon {
+    background-color: transparent; /* SEM BACKGROUND */
+    padding: 0; /* Remove padding */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* AUMENTADO de 50px para 60px */
+    height: 60px; /* AUMENTADO de 50px para 60px */
+    overflow: hidden;
+}
+
+/* Estilo para IMAGEM dentro do header-icon */
+.header-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+/* ==================== HEADER ==================== */
+header {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 200;
+}
+
+header:hover {
+    color: var(--blue-50);
+    font-weight: bold;
+}
+
+/* ==================== HEADER RIGHT: BOTOES DE CONTROLE ==================== */
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* DIMINUÍDO de 15px para 10px - mais perto do texto */
+    
+}
+
+
+.window-controls {
+    display: flex;
+    gap: 10px;
+    margin-right: 15px;
+   
+}
+
+
+.window-btn-minimize {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: 0.05rem solid var(--text-black);
+}
+
+.window-btn-minimize:hover {
+    background-color: rgba(23, 60, 243, 0.918);
+    border: 0.05rem solid var(--white);
+}
+
+.minimizar {
+    margin-top: 20px;
+}
+
+.window-btn-close {
+    width: 40px;
+    height: 40px;
+   background-color: var(--bg-btn-close);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: 0.05rem solid var(--text-black);
+}
+
+.window-btn-close:hover {
+   background-color: #d32f2f;
+  border: 0.05rem solid var(--white);
+}
+
+.window-btn-maximizar {
+     width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: 0.05rem solid var(--text-black);
+}
+
+.window-btn-maximizar:hover {
+ background-color: rgba(23, 60, 243, 0.918);
+ border: 0.05rem solid var(--white);
+}
+
+/* ==================== SEÇÃO DO BANNER ==================== */
+        .banner {
+            background: linear-gradient(to bottom, #1a237e, #0d47a1);
+            padding: 10px;
+            margin: 0px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        /* ==================== DIV DO TÍTULO "ENTENDENDO A BASE DA WEB" ==================== */
+        .banner-content {
+            background-color: white;
+            padding: 30px;
+            border: 4px solid #000;
+            display: flex; /* DISPLAY FLEX - organiza ícone e texto lado a lado */
+            align-items: center;
+            gap: 20px;
+           
+        }
+
+        /* ==================== ÍCONE DE INFORMAÇÃO ==================== */
+        .info-icon {
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            border: 3px solid #2196f3;
+            border-radius: 50%; /* Faz ficar redondo */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0; /* Não encolhe */
+        }
+
+        .info-icon::before {
+            content: 'i';
+            color: #2196f3;
+            font-size: 36px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        
+
+        .banner-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            
+        }
+
+        /* ==================== CONTAINER PRINCIPAL ==================== */
+        .container {
+            padding: 40px;
+            margin: 20px;
+            background-color: white;
+            border: 3px solid var(--blue-100);
+            border-radius: 8px;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ==================== DISPLAY FLEX - ORGANIZAÇÃO PRINCIPAL ==================== */
+        .content-wrapper {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* ==================== SEÇÃO ESQUERDA (ÍNDICE) ==================== */
+        .index-section {
+            flex: 0 0 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+        }
+
+        .index-section h3 {
+            font-size: 64px;
+            margin-bottom: -40px;
+            font-weight: bold;
+        }
+
+        /* ==================== ÍCONE DO MOUSE ==================== */
+        .cursor-icon {
+            
+            
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+       
+
+        }
+
+       .cursor-icon img {
+       margin-left: 12rem;
+       width: 60%;
+       height: 60px;
+       margin-bottom: -100px;
+     
+      
+
+  
+       }
+        /* ==================== DISPLAY GRID - GRADE DE BOTÕES ==================== */
+        .buttons-grid {
+            flex: 0 0 60%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-content: center;
+            justify-items: stretch;
+            padding: 20px 20px;
+        }
+
+        /* ==================== ESTILO DOS BOTÕES ==================== */
+        .menu-button {
+            background-color: #d0d0d0;
+            border: 2px solid #333;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            text-decoration: none;
+            color: var(--text-black);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-button:hover {
+            background-color: #b0b0b0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+/* ==================== SEÇÃO DE CONTEÚDO ==================== */
+        .content-section {
+            padding: 40px;
+            margin: 20px;
+            background-color: white;
+            border: 3px solid var(--blue-100);
+            border-radius: 8px;
+        }
+
+        .content-section h2 {
+            color: var(--blue-100);
+            font-size: 32px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--blue-50);
+        }
+
+        .content-section h3 {
+            color: var(--blue-50);
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content-section p {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .content-section ul,
+        .content-section ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content-section li {
+            margin-bottom: 8px;
+        }
+
+        .content-section blockquote {
+            background-color: var(--gray-light);
+            border-left: 5px solid var(--blue-50);
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        .content-section a {
+            color: var(--blue-50);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content-section a:hover {
+            text-decoration: underline;
+        }
+
+        .content-section hr {
+            border: none;
+            border-top: 2px solid var(--dark-gray);
+            margin: 30px 0;
+        }
+
+        /* ==================== FOOTER ==================== */
+        footer {
+           
+    background: var(--gradiente);
+    padding: 15px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+        .footer-left {
+color: var(--white);
+font-weight: bold;
+
+
+        }
+
+
+        .footer-right {
+            font-weight: 900;
+            color: var(--white);
+           
+            margin-left: 200px;
+        }
+
+        /* ==================== BOTÃO VOLTAR AO TOPO ==================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 80px;
+            right: 30px;
+            background-color: var(--blue-50);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--);
+            transform: translateY(-5px);
+        }
+
+        /* ==================== RESPONSIVIDADE ==================== */
+        /* MOBILE - Telas pequenas (até 768px) */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 15px;
+            }
+
+            .header-left {
+                flex: 1;
+            }
+
+            header h1 {
+                font-size: 14px;
+            }
+
+            .header-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .window-btn {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+            }
+
+            .banner {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            .banner-content {
+                padding: 15px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner-content h2 {
+                font-size: 32px;
+            }
+
+            .info-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .container {
+                margin: 10px;
+                padding: 20px;
+                min-height: auto;
+            }
+
+            .content-wrapper {
+                flex-direction: column;
+                gap: 40px;
+                max-width: 100%;
+            }
+
+            .index-section {
+                flex: 1;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .index-section h3 {
+                font-size: 48px;
+                margin-bottom: 0;
+            }
+
+            /* Esconde o mouse no mobile */
+            .cursor-icon {
+                display: none;
+            }
+
+            /* Grid vira 1 coluna no mobile */
+            .buttons-grid {
+                grid-template-columns: 1fr;
+                width: 100%;
+            }
+
+            .menu-button {
+                font-size: 16px;
+                padding: 15px;
+            }
+
+            .content-section {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            .content-section h2 {
+                font-size: 24px;
+            }
+
+            .content-section h3 {
+                font-size: 20px;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        /* TABLET - Telas médias (769px a 1024px) */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            .banner-content h2 {
+                font-size: 48px;
+            }
+
+            .container {
+                padding: 30px;
+                min-height: 450px;
+            }
+
+            .content-wrapper {
+                gap: 40px;
+                max-width: 900px;
+            }
+
+            .index-section {
+                flex: 0 0 35%;
+            }
+
+            .index-section h3 {
+                font-size: 52px;
+            }
+
+            .cursor-icon {
+                font-size: 52px;
+            }
+
+            .buttons-grid {
+                flex: 0 0 65%;
+            }
+
+            .menu-button {
+                font-size: 16px;
+                padding: 18px;
+            }
+
+            .content-section {
+                padding: 30px;
+            }
+        }
+
+        /* DESKTOP GRANDE - Telas muito grandes (acima de 1400px) */
+        @media (min-width: 1400px) {
+            .container,
+            .banner,
+            .content-section {
+                max-width: 1400px;
+                margin: 20px auto;
+            }
+        }
+
+        /* LANDSCAPE MOBILE - Celular deitado */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .banner-content h2 {
+                font-size: 28px;
+            }
+
+            .index-section h3 {
+                font-size: 36px;
+            }
+
+            .buttons-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }

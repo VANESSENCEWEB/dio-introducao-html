@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTENDENDO A BASE DA WEB: Primeiros passos com HTML</title>
+
+    <!-- C S S-->
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+
+
+<body id="topo">
+
+    <header>
+    <!-- Lado esquerdo: Ícone + Título -->
+    <div class="header-left">
+        <div class="header-icon">
+            <img src="./img/ICON-HTML.svg" alt="HTML Icon">
+        </div>
+        Módulo I - Primeiros Passos com HTML
+    </div>
+
+    <!-- Lado direito: Botões de controle -->
+      <div class="header-righ">
+    <div class="window-controls">
+       
+        <button class="window-btn-minimize" title="Minimizar"><span class="minimizar">−</span></button>
+        <button class="window-btn-maximizar" title="Maximizar">□</button>
+        <button class="window-btn-close" title="Fechar">✕</button>
+    </div>
+    </div>
+</header>
+
+<!-- ==================== BANNER COM TÍTULO GRANDE ==================== -->
+    <div class="banner">
+        <!-- DIV dentro de DIV - container interno -->
+        <div class="banner-content">
+            <!-- Ícone de informação (círculo com "i") -->
+            <div class="info-icon"></div>
+            
+            <!-- Título grande -->
+            <h1>Entendendo a base da web</h1>
+        </div>
+    </div>
+
+    <!-- ==================== CONTAINER PRINCIPAL COM ÍNDICE E MENU ==================== -->
+    <div class="container">
+        <div class="content-wrapper">
+            
+            <!-- Seção esquerda: Índice -->
+            <div class="index-section">
+                <h3>Índice</h3>
+                <div class="cursor-icon">
+                    <img src="./img/ICON-MOUSE.svg">
+                </div>
+            </div>
+
+            <!-- Seção direita: Grid de botões -->
+            <div class="buttons-grid">
+                <a href="#historia" class="menu-button">Historia dos computadores</a>
+                <a href="#tags-semanticas" class="menu-button">Tags Semanticas</a>
+                <a href="#clients" class="menu-button">Clients</a>
+                <a href="#listas" class="menu-button">Listas</a>
+                <a href="#servers" class="menu-button">Servers</a>
+                <a href="#proximos-passos" class="menu-button">Proximos Passos</a>
+                <a href="#estrutura" class="menu-button">Estrutura HTML</a>
+                <a href="#referencias" class="menu-button">Referencias</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== CONTEÚDO: HISTÓRIA DOS COMPUTADORES ==================== -->
+    <div class="content-section" id="historia">
+        <h2><strong>História dos computadores</strong></h2>
+        <p>A história dos computadores é <strong>fascinante</strong> e remonta a séculos atrás. O primeiro dispositivo de cálculo mecânico foi o <mark>ábaco</mark>, usado há mais de 5000 anos. No século XIX, <i>Charles Babbage</i> criou a <u>Máquina Analítica</u>, considerada o primeiro computador mecânico de propósito geral.</p>
+        
+        <p>Durante a <strong>Segunda Guerra Mundial</strong>, o desenvolvimento de computadores acelerou drasticamente. O <abbr title="Electronic Numerical Integrator and Computer">ENIAC</abbr>, criado em 1946, foi um dos primeiros computadores eletrônicos digitais. Ele pesava cerca de 30 toneladas e ocupava <small>(acredite se quiser)</small> uma sala inteira!</p>
+        
+        <blockquote><br>
+            <p><i>"O computador nasceu para resolver problemas que não existiam antes."</i> - Bill Gates</p>
+        </blockquote>
+        
+        <p>Nos anos 1970, surgiram os primeiros <strong>computadores pessoais</strong>. A Apple e a IBM foram pioneiras nesta revolução. <del>Antes disso, computadores eram acessíveis apenas para grandes empresas e governos.</del> Hoje, carregamos computadores mais poderosos que o ENIAC em nossos bolsos!</p>
+        
+        <p>Para saber mais, visite a <a href="https://pt.wikipedia.org/wiki/História_do_computador" target="_blank">Wikipedia sobre História dos Computadores</a>.</p>
+        
+        <p><small><a href="#topo">Voltar ao topo ↑</a></small></p>
+    </div>
+
+    <!-- ==================== CONTEÚDO: TAGS SEMÂNTICAS ==================== -->
+    <div class="content-section" id="tags-semanticas">
+        <h2>Tags Semânticas</h2>
+        <p>As <strong>tags semânticas</strong> do HTML5 foram introduzidas para dar mais <mark>significado</mark> ao conteúdo da página, tornando-o mais acessível e compreensível tanto para navegadores quanto para mecanismos de busca.</p>
+        
+        <h3>Principais Tags Semânticas:</h3>
+        <ul>
+            <li><strong>&lt;header&gt;</strong> - Cabeçalho da página ou seção</li>
+            <li><strong>&lt;nav&gt;</strong> - Menu de navegação</li>
+            <li><strong>&lt;main&gt;</strong> - Conteúdo principal</li>
+            <li><strong>&lt;article&gt;</strong> - Artigo independente</li>
+            <li><strong>&lt;section&gt;</strong> - Seção de conteúdo</li>
+            <li><strong>&lt;aside&gt;</strong> - Conteúdo lateral</li>
+            <li><strong>&lt;footer&gt;</strong> - Rodapé</li>
+        </ul>
+        
+        <blockquote>
+            <p>"Use tags semânticas não apenas para estilização, mas para dar significado ao seu conteúdo."</p>
+        </blockquote>
+        
+        <p><small><a href="#topo">
+            <br>
+            Voltar ao topo ↑</a></small></p>
+    </div>
+
+    <!-- ==================== CONTEÚDO: CLIENTS ==================== -->
+    <div class="content-section" id="clients">
+        <h2>O que são <i>Clients</i>?</h2>
+        <p>Na arquitetura <strong>cliente-servidor</strong>, o <i>client</i> (cliente) é o dispositivo ou aplicação que <u>solicita serviços ou recursos</u> de um servidor. Em termos simples, é o <mark>solicitante</mark> da informação.</p>
+        
+        <p>Exemplos comuns de clients incluem:</p>
+        <ol>
+            <li><strong>Navegadores web</strong> (Chrome, Firefox, Safari)</li>
+            <li>Aplicativos de email (Outlook, Gmail)</li>
+            <li>Aplicativos móveis que acessam dados online</li>
+        </ol>
+        
+        <p>Quando você acessa um site, seu navegador <small>(que é um client)</small> envia uma <abbr title="HyperText Transfer Protocol">HTTP</abbr> request para o servidor. O processo funciona assim: Client → Requisição → Servidor → Resposta → Client.</p>
+        
+        <p>A fórmula química da água é H<sub>2</sub>O, mas isso não tem nada a ver com clients! <sup>😄</sup></p>
+        
+        <p><small><a href="#topo">
+            <br>Voltar ao topo ↑</a></small></p>
+    </div>
+
+    <!-- ==================== CONTEÚDO: LISTAS ==================== -->
+    <div class="content-section" id="listas">
+        <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+        <p>Em HTML, existem <strong>dois tipos principais</strong> de listas, cada uma com sua <u>finalidade específica</u>.</p>
+        
+        <h3>Listas Não Ordenadas (&lt;ul&gt;)</h3>
+        <p>As listas não ordenadas são usadas quando a <i>ordem dos itens não importa</i>. Elas utilizam <mark>marcadores</mark> (bullets) por padrão.</p>
+        
+        <p>Exemplo de quando usar <abbr title="Unordered List">UL</abbr>:</p>
+        <ul>
+            <li>Lista de compras</li>
+            <li>Características de um produto</li>
+            <li>Itens de menu</li>
+        </ul>
+        
+        <h3>Listas Ordenadas (&lt;ol&gt;)</h3>
+        <p>As listas ordenadas são usadas quando a <strong>sequência importa</strong>. Elas utilizam <mark>números</mark> por padrão.</p>
+        
+        <p>Exemplo de quando usar <abbr title="Ordered List">OL</abbr>:</p>
+        <ol>
+            <li>Receitas culinárias <small>(passo a passo)</small></li>
+            <li>Instruções de montagem</li>
+            <li>Rankings e classificações</li>
+        </ol>
+        
+        <blockquote><br>
+            <p><i>"A escolha entre OL e UL deve ser baseada no significado semântico, não na aparência visual."</i></p>
+        </blockquote>
+        
+        <p>Você também pode criar listas aninhadas, com até <del>2</del> infinitos níveis de profundidade<sup>*</sup>!</p>
+        <p><sup>*</sup><small>Embora tecnicamente possível, não é recomendado usar mais de 3 níveis.</small></p>
+        
+        <p><small><a href="#topo">
+            <br>Voltar ao topo ↑</a></small></p>
+    </div>
+
+    <!-- ==================== CONTEÚDO: SERVERS ==================== -->
+    <div class="content-section" id="servers">
+        <h2>O que são <i>Servers</i>?</h2>
+        <p>Um <i>server</i> (servidor) é um <strong>computador ou sistema</strong> que <u>fornece recursos, dados ou serviços</u> para outros computadores, chamados de clients. O servidor está sempre <mark>"ouvindo"</mark> as requisições dos clients.</p>
+        
+        <blockquote>
+            <br>
+            <p>"Servidores são o coração da internet moderna."</p>
+        </blockquote>
+        
+        <p>Existem diversos tipos de servidores:</p>
+        <ul>
+            <li><strong>Web Servers</strong> - servem páginas HTML</li>
+            <li><strong>Database Servers</strong> - armazenam e gerenciam dados</li>
+            <li><strong>File Servers</strong> - compartilham arquivos</li>
+            <li><strong>Email Servers</strong> - gerenciam emails</li>
+        </ul>
+        
+        <p><del>Servidores são apenas computadores grandes e caros.</del> Na verdade, qualquer computador pode funcionar como servidor, desde que tenha o <i>software</i> adequado instalado!</p>
+        
+        <p>A potência de processamento é medida em GHz, como por exemplo: 3.2 × 10<sup>9</sup> Hz.</p>
+        
+        <p><small><a href="#topo">
+            <br>
+            Voltar ao topo ↑</a></small></p>
+    </div>
+
+    <!-- ==================== CONTEÚDO: PRÓXIMOS PASSOS ==================== -->
+    <div class="content-section" id="proximos-passos">
+        <h2>Próximos Passos</h2>
+        <p>Agora que você aprendeu os <strong>fundamentos do HTML</strong>, é hora de dar os próximos passos na sua jornada como desenvolvedor web!</p>
+        
+        <h3>O que estudar em seguida:</h3>
+        <ol>
+            <li><strong>CSS (Cascading Style Sheets)</strong> - Para estilizar suas páginas</li>
+            <li><strong>JavaScript</strong> - Para adicionar interatividade</li>
+            <li><strong>Frameworks CSS</strong> - Bootstrap, Tailwind CSS</li>
+            <li><strong>Git e GitHub</strong> - Controle de versão</li>
+            <li><strong>Responsive Design</strong> - Design responsivo</li>
+        </ol>
+        
+        <blockquote>
+            <p><i>"A única maneira de fazer um ótimo trabalho é amar o que você faz."</i> - Steve Jobs</p>
+        </blockquote>
+        
+        <p>Continue praticando e construindo projetos! A <mark>prática</mark> é fundamental para solidificar seu conhecimento.</p>
+        
+        <p><small><a href="#topo"><br>Voltar ao topo ↑</a></small></p>
+    </div>
+
+    <!-- ==================== CONTEÚDO: ESTRUTURA HTML ==================== -->
+    <div class="content-section" id="estrutura">
+        <h2>Como é uma estrutura básica de um HTML?</h2>
+        <p>A estrutura básica de um documento <abbr title="HyperText Markup Language">HTML</abbr> é <strong>fundamental</strong> para qualquer desenvolvedor web. Todo documento HTML começa com a declaração <mark>&lt;!DOCTYPE html&gt;</mark>, que informa ao navegador que se trata de um documento HTML5.</p>
+        
+        <p>A estrutura é composta por <u>duas partes principais</u>:</p>
+        
+        <h3>1. Head (Cabeçalho)</h3>
+        <p>O <i>head</i> contém <strong>metadados</strong> sobre o documento, como:</p>
+        <ul>
+            <li>Título da página (&lt;title&gt;)</li>
+            <li>Codificação de caracteres (&lt;meta charset&gt;)</li>
+            <li>Links para arquivos CSS</li>
+            <li>Scripts JavaScript</li>
+        </ul>
+        
+        <h3>2. Body (Corpo)</h3>
+        <p>O <i>body</i> contém todo o <strong>conteúdo visível</strong> da página <small>(textos, imagens, vídeos, etc.)</small>.</p>
+        
+        <blockquote><br>
+            <p>"HTML é a espinha dorsal da web. CSS é a pele, e JavaScript é o músculo."</p>
+        </blockquote>
+        
+        <p><del>HTML é uma linguagem de programação.</del> HTML é uma <mark>linguagem de marcação</mark>, não de programação!</p>
+        
+        <p><small><a href="#topo"><br>Voltar ao topo ↑</a></small></p>
+    </div>
+
+    <!-- ==================== CONTEÚDO: REFERÊNCIAS ==================== -->
+    <div class="content-section" id="referencias">
+        <h2>Links de referências</h2>
+        <p><strong><u>Recursos adicionais:</u></strong> Confira estes sites para aprofundar seus conhecimentos em HTML e desenvolvimento web.</p>
+        <ul>
+            <li><a href="https://www.dio.me" target="_blank">DIO - Digital Innovation One</a></li>
+            <li><a href="https://www.w3.org" target="_blank">W3C - World Wide Web Consortium</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs - Mozilla</a></li>
+            <li><a href="https://www.w3schools.com" target="_blank">W3Schools - Tutoriais e Referências</a></li>
+            <li><a href="https://htmlreference.io" target="_blank">HTML Reference - Guia Visual</a></li>
+        </ul>
+        
+        <hr />
+        
+        <p><small><a href="#topo">
+            <br>
+            Voltar ao topo ↑</a></small></p>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+     <div class="footer-left">
+          <p><small>Vanessa Rafaella</small></p>
+           <p><small>© 2026 - Todos os direitos reservados</small></p>
+           </div>
+
+           <div class="footer-right">
+          
+     <p><small>Página criada como parte do desafio do Módulo I </small></p>
+  
+           </div>
+       
+    
+    </footer>
+
+    <!-- ==================== BOTÃO VOLTAR AO TOPO ==================== -->
+    <a href="#topo" class="back-to-top" id="backToTop">↑</a>
+
+
+    <script src="script.js"></script>
+    </body>
+    </html>
